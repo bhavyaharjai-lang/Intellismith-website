@@ -6,6 +6,7 @@
 <title>Intellismith — Technology Consulting & Talent Solutions</title>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 <style>
+
     /* FLOATING CONTACT BUTTONS */
 .floating-btns {
   position: fixed;
@@ -581,6 +582,18 @@
     flex-direction: column;
   }
 }
+
+/* ... your existing CSS above this ... */
+
+  /* BLOGS */
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+  .blog-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 30px; transition: all 0.3s; }
+  .blog-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(21,101,192,0.1); }
+  .blog-title { font-size: 17px; font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
+  .blog-link { font-size: 13.5px; color: var(--accent); text-decoration: none; font-weight: 500; }
+  .blog-link:hover { text-decoration: underline; }
+
+
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -825,12 +838,13 @@
         <p>"With Intellismith, you can rest assured you will get a pipeline of candidates that are a relevant pool of talent, thereby reducing your screening time and improving your offer-to-joining ratio."</p>
       </div>
       <div class="chip-group">
-        <span class="chip a">BFSI Hiring</span>
-        <span class="chip a">IT Staffing</span>
-        <span class="chip a">Telecom Talent</span>
-        <span class="chip">C2H Contracts</span>
-        <span class="chip">Leadership Search</span>
-        <span class="chip">Staff Augmentation</span>
+        <span class="chip a">Software Testing</span>
+        <span class="chip a">Data Science</span>
+        <span class="chip a">SCRUM Master</span>
+        <span class="chip">Backend Operations</span>
+        <span class="chip">API Development</span>
+        <span class="chip">Customer Onboarding</span>
+        <span class="chip">Sales</span>
       </div>
     </div>
   </div>
@@ -847,7 +861,7 @@
     <div class="ld-card ld-main">
       <div class="ld-tag">Early-Career Accelerator</div>
       <h3 class="ld-title">CFS — Career Fast-Start Program</h3>
-      <p class="ld-desc">Designed for individuals with 0–3 years of experience keen on breaking into the BFSI arena. Enroll, learn, practice, and get hired.</p>
+      <p class="ld-desc">A state-of-the-art skilling and assessment platform designed to help job seekers improve their industry knowledge and interview skills. We bridge the gap between education, employability, and high-impact careers.</p>
       <div class="ld-features">
         <div class="ld-feat"><span class="ld-feat-icon">📚</span><div>BFSI Industry Deep-Dive — products, services & sector trends</div></div>
         <div class="ld-feat"><span class="ld-feat-icon">🎥</span><div>Role-specific interview prep with recorded sample videos from experts</div></div>
@@ -892,8 +906,15 @@
     <div class="story-left">
       <div class="eyebrow">Our Story</div>
       <h2>Built on <em style="font-family:'Playfair Display',serif;font-style:italic;color:var(--sky);">Decades</em> of Expertise</h2>
-      <p>Intellismith was established in August 2019 by a team of professionals with over 50 years of collective corporate experience. From pioneering technology resource outsourcing to becoming a trusted enterprise solutions and learning partner — we've grown with innovation at our core.</p>
-      <p>We support digital transformation journeys through cloud enablement, AI, automation, and secure scalable IT services. Our mission: delivering industry-focused talent solutions, transformative learning, and enterprise-ready technology — with purpose and precision.</p>
+      <p>From pioneering technology resource outsourcing and talent acquisition to becoming a trusted partner for enterprise solutions and launching a state-of-the-art training & assessment platform — Intellismith has grown with innovation at its core.</p>
+      
+      <div class="highlight-box" style="margin: 20px 0; padding: 20px; border-left: 4px solid var(--accent); background: #f8f9fb;">
+        <h4 style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 8px;">Our Mission</h4>
+        <p style="font-size: 16px; font-weight: 500; color: var(--paper); line-height: 1.6; margin: 0;">
+          "Delivering industry-focused talent solutions, transformative learning experiences, and enterprise-ready technology services — all with purpose and precision."
+        </p>
+      </div>
+
       <p>The leadership team has worked across banking, insurance, finance, education, outsourcing, and IT — committed to transparency and accountability in every interaction.</p>
       <div class="chip-group">
         <span class="chip a">BFSI</span>
@@ -925,6 +946,29 @@
         <span class="metric-val" style="font-size:20px;">Noida · Delhi</span>
         <div class="metric-label">Office No. B 210, Tower B, Noida One, Sector 62, U.P. – 201309</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR BLOGS -->
+<section class="section bg-alt" id="blogs">
+  <div class="section-center reveal">
+    <div class="eyebrow">Insights & Articles</div>
+    <h2 class="section-title">Our <em>Blogs</em></h2>
+    <p class="section-sub">Read our latest thoughts on career growth, work culture, and personal branding.</p>
+  </div>
+  <div class="blog-grid reveal">
+    <div class="blog-card">
+      <h3 class="blog-title">Why Speaking Clearly and Briefly is Important for Your Career</h3>
+      <a href="#" class="blog-link">Learn More →</a>
+    </div>
+    <div class="blog-card">
+      <h3 class="blog-title">The Transition from Work-Life Balance to Work-Life Integration</h3>
+      <a href="#" class="blog-link">Learn More →</a>
+    </div>
+    <div class="blog-card">
+      <h3 class="blog-title">Unleash The Power of Personal Branding</h3>
+      <a href="#" class="blog-link">Learn More →</a>
     </div>
   </div>
 </section>
